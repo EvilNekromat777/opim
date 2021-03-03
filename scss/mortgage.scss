@@ -32,8 +32,12 @@
 		font-weight: 600;
 		font-size: 21px;
 		line-height: 150%;
-		line-height: 135%;
 		color: #3D3D3D;
+	}
+	&__text-title_bold{
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 135%;
 	}
 	&__items{
 		@include flexbox();
@@ -65,7 +69,7 @@
 		color: #FFFFFF;
 	}
 	&__item.active .mortgage__string{
-		border-bottom: 1px solid #FFFFFF;
+		border-bottom: 1px solid #ffffff3b;
 		&:last-child{
 			border-bottom: 0px;
 		}
@@ -77,7 +81,9 @@
 		@include flexbox();
 		justify-content: space-between;
 		padding: 10px 0px 10px 0px;
-		border-bottom: 1px solid #345995;
+		//border-bottom: 1px solid #345995;
+		border-bottom: 1px solid #cbd4e3;
+		
 		&:last-child{
 			border-bottom: 0px;
 		}
@@ -99,7 +105,7 @@
 		@include flexbox();
 		justify-content: space-between;
 		padding: 10px 0px 10px 0px;
-		border-bottom: 1px solid #345995;
+		border-bottom: 1px solid #cbd4e3;
 		margin: 0px 0px 52px 0px;
 	}
 	&__conditions{

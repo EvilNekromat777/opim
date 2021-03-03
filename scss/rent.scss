@@ -25,5 +25,8 @@
 	}
 	&__video{
 		margin: 0px 0px 0px 48px;
+		iframe{
+			border-radius: 6px;
+		}
 	}
 }

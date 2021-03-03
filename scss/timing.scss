@@ -40,6 +40,7 @@
 		background: #3459951f;
 		padding: 30px 40px 17px 20px;
 		margin: 0px 10px 0px 0px;
+		border-radius: 6px;
 		@include flexbox();
 		flex-direction: column;
 		justify-content: space-between;

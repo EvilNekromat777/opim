@@ -12,6 +12,9 @@
 	&__item{
 		flex:0 1 30%;
 		max-width: 408px;
+		iframe{
+			border-radius: 6px;
+		}
 	}
 	&__title{
 		@include font-style;

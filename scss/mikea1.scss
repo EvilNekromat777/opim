@@ -13,6 +13,9 @@
 		height: 382px;
 		margin: 0px 110px 0px 0px;
 	}
+	iframe{
+		border-radius: 6px;
+	}
 	&__head-info{
 		margin: 0px 0px 0px 80px;
 	}
@@ -44,6 +47,9 @@
 		&:nth-child(4n) {
 			margin: 22px 0px 0px 0px;
 		 }
+		 iframe{
+			border-radius: 6px;
+		}
 	}
 	&__item-text{
 		margin: 20px 0px 0px 0px;

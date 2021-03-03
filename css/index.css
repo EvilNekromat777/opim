@@ -430,7 +430,7 @@ h6 {
 .subtitle {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 135%;
   color: #8C8C8C;
@@ -688,7 +688,7 @@ h6 {
 }
 
 .banner1 {
-  margin: 20px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   position: relative;
   width: 100%;
   height: 360px;
@@ -759,7 +759,6 @@ h6 {
 @media (max-width: 376px) {
   .banner1 {
     margin: 11px 0px 0px 0px;
-    background: url("../images/banner1/01-adaptive.png") no-repeat;
     padding: 24px 21px 20px 19px;
   }
   .banner1__head {
@@ -1509,6 +1508,9 @@ h6 {
   flex: 0 1 30%;
   max-width: 408px;
 }
+.video__item iframe {
+  border-radius: 6px;
+}
 .video__title {
   font-family: Montserrat;
   font-style: normal;
@@ -1649,6 +1651,9 @@ h6 {
   height: 382px;
   margin: 0px 110px 0px 0px;
 }
+.mikea1 iframe {
+  border-radius: 6px;
+}
 .mikea1__head-info {
   margin: 0px 0px 0px 80px;
 }
@@ -1682,6 +1687,9 @@ h6 {
 }
 .mikea1__item:nth-child(4n) {
   margin: 22px 0px 0px 0px;
+}
+.mikea1__item iframe {
+  border-radius: 6px;
 }
 .mikea1__item-text {
   margin: 20px 0px 0px 0px;
@@ -1945,6 +1953,7 @@ h6 {
   background: #3459951f;
   padding: 30px 40px 17px 20px;
   margin: 0px 10px 0px 0px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2640,6 +2649,9 @@ h6 {
   line-height: 140%;
   align-items: center;
 }
+.trifle__item video {
+  border-radius: 6px;
+}
 .trifle__item-title {
   font-family: Montserrat;
   font-style: normal;
@@ -2775,6 +2787,9 @@ h6 {
 }
 .rent__video {
   margin: 0px 0px 0px 48px;
+}
+.rent__video iframe {
+  border-radius: 6px;
 }
 
 * {
@@ -3181,6 +3196,9 @@ h6 {
 .enjoy {
   text-align: center;
   margin: 0px 0px 60px 0px;
+}
+.enjoy iframe {
+  border-radius: 6px;
 }
 .enjoy__title {
   margin: 0 auto 40px;
@@ -3653,6 +3671,9 @@ h6 {
 .level__item:nth-child(3n) {
   margin: 30px 0px 0px 0px;
 }
+.level__item video {
+  border-radius: 6px;
+}
 .level__item-title {
   font-family: Montserrat;
   font-style: normal;
@@ -3832,6 +3853,9 @@ h6 {
 }
 .projects__item-img {
   position: relative;
+}
+.projects__item-img img {
+  border-radius: 6px;
 }
 .projects__item-place {
   display: flex;
@@ -4314,8 +4338,12 @@ h6 {
   font-weight: 600;
   font-size: 21px;
   line-height: 150%;
-  line-height: 135%;
   color: #3D3D3D;
+}
+.mortgage__text-title_bold {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 135%;
 }
 .mortgage__items {
   display: flex;
@@ -4347,7 +4375,7 @@ h6 {
   color: #FFFFFF;
 }
 .mortgage__item.active .mortgage__string {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff3b;
 }
 .mortgage__item.active .mortgage__string:last-child {
   border-bottom: 0px;
@@ -4359,7 +4387,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
-  border-bottom: 1px solid #345995;
+  border-bottom: 1px solid #cbd4e3;
 }
 .mortgage__string:last-child {
   border-bottom: 0px;
@@ -4381,7 +4409,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
-  border-bottom: 1px solid #345995;
+  border-bottom: 1px solid #cbd4e3;
   margin: 0px 0px 52px 0px;
 }
 .mortgage__conditions {
@@ -4913,6 +4941,7 @@ h6 {
   position: relative;
   width: 1095px;
   height: 724px;
+  border-radius: 6px;
 }
 
 .slider__item_decision-body {
@@ -4920,6 +4949,7 @@ h6 {
   top: -50px;
   left: 0;
 }
+
 .slider__item_decision-plashka {
   background: #DE0111;
   border-radius: 5px;
@@ -5127,10 +5157,10 @@ h6 {
   margin: 0px 13px 0px 0px;
 }
 .kdm p {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: rgba(255, 255, 255, 0.7);
 }

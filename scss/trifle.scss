@@ -28,6 +28,9 @@
 		@include font-style;
 		line-height: 140%;
 		align-items: center;
+		video{
+			border-radius: 6px;
+		}
 	}
 	&__item-title{
 		@include font-style;
