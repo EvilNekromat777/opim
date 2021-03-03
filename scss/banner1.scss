@@ -1,0 +1,99 @@
+@import "null.scss";
+@import "mixins.scss";
+
+.banner1{
+	margin: 20px 0px 0px 0px;
+	position: relative;
+	width: 100%;
+	height: 360px;
+	background: url('../images/banner1/01.png') no-repeat;
+	padding: 24px 20px 40px 40px;
+	transition: all 1s ease 0s;
+	border-radius: 6px;
+	overflow: hidden;
+	@include flexbox();
+	flex-direction: column;
+	justify-content: space-between;
+	&__opaciti{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		opacity: 0.3;
+	}
+	&__head{
+		position: relative;
+		z-index: 2;
+		display: inline-flex;
+		align-items: center;
+	}
+	&__title{
+		@include font-style;
+		font-weight: 700;
+		font-size: 50px;
+		line-height: 125%;
+		color: #FFFFFF;
+		margin: 0px 15px 0px 0px;
+	}
+	&__novinka{
+		width: 124px;
+		height: 30px;
+		background: #345995;
+		border-radius: 5px;
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		@include font-style;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 160%;
+		color: #FFFFFF;
+	}
+	&__subtitle{
+		position: relative;
+		z-index: 2;
+		@include font-style;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 135%;
+		color: #FFFFFF;
+		margin: 7px 0px 0px 0px;
+	}
+}
+.banner1.active{
+	margin: 115px 0px 0px 0px;
+}
+
+//========================================================>
+
+@media (max-width: 376px){
+	.banner1{
+		margin: 11px 0px 0px 0px;
+		background: url('../images/banner1/01-adaptive.png') no-repeat;
+		padding: 24px 21px 20px 19px;
+		&__head{
+			display: flex;
+			justify-content: space-between;
+		}
+		&__opaciti{
+			position: absolute;
+			opacity: 1;
+			top: 0;
+			left: 0;
+			background: url('../images/banner1/Rectangle\ 234.png') no-repeat;
+		}
+	}
+}
+@media (max-width: 374px){
+	.banner1{
+		padding: 24px 21px 20px 15px;
+		&__novinka{
+			width: 100px;
+			height: 25px;
+			font-size: 10px;
+			line-height: 140%;
+		}
+	}
+}

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -193,16 +194,17 @@ h6 {
   justify-content: space-between;
 }
 .header__nav {
-  margin: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
 }
 .header__link {
   color: #D0D0D0;
   margin: 0px 70px 0px 0px;
   padding: 0px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 160.5%;
+  font-weight: 400;
 }
 .header__link:last-child {
   margin: 0px 0px 0px 0px;
@@ -211,16 +213,16 @@ h6 {
   color: #FFFFFF;
 }
 .header__link img {
-  margin: -4px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .header__tel {
   margin: 6px 0px 0px 0px;
-  color: #fff;
-  font-family: Roboto;
+  color: #FFFFFF;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.5%;
 }
 .header__burger-search {
   display: none;
@@ -260,9 +262,8 @@ h6 {
   margin: 0px 0px 10px 0px;
 }
 .header-plashka p {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 150%;
   color: #D0D0D0;
@@ -418,22 +419,53 @@ h6 {
 }
 
 .title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
   color: #3D3D3D;
   margin: 0px 30px 0px 0px;
 }
 
 .subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #8C8C8C;
+}
+
+.popup {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.768);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.popup__body {
+  position: relative;
+}
+.popup__close {
+  color: grey;
+  position: absolute;
+  top: -25px;
+  left: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popup__close:hover {
+  opacity: 0.5;
+}
+
+.popup.active {
+  display: flex;
 }
 
 @media (max-width: 1030px) {
@@ -547,15 +579,18 @@ h6 {
   height: 52px;
   margin: 20px auto;
   display: flex;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160.5%;
   align-items: center;
   justify-content: center;
+  color: #3D3D3D;
   display: none;
 }
 .frame p {
   margin: 0px 30px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   color: #3D3D3D;
@@ -682,12 +717,11 @@ h6 {
   align-items: center;
 }
 .banner1__title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
-  line-height: 140%;
+  line-height: 125%;
   color: #FFFFFF;
   margin: 0px 15px 0px 0px;
 }
@@ -699,22 +733,21 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 160%;
   color: #FFFFFF;
 }
 .banner1__subtitle {
   position: relative;
   z-index: 2;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #FFFFFF;
   margin: 7px 0px 0px 0px;
 }
@@ -844,7 +877,7 @@ h6 {
 }
 
 .lineup2021 {
-  padding: 58px 0px 0px 0px;
+  padding: 60px 0px 0px 0px;
 }
 .lineup2021__info {
   display: flex;
@@ -865,9 +898,8 @@ h6 {
   position: relative;
 }
 .lineup2021__item-info {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 140%;
   color: #3D3D3D;
@@ -881,14 +913,15 @@ h6 {
   border-radius: 6px;
 }
 .lineup2021__item-sber {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   color: #21A038;
-  margin: 15px 0px 0px 0px;
+  margin: 14px 0px 0px 0px;
 }
 .lineup2021__item-sber-logo {
   background: url("../images/lineup2021/sber_logo.png") no-repeat;
@@ -900,10 +933,9 @@ h6 {
   height: 30px;
   background: #DE0111;
   border-radius: 5px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -914,21 +946,28 @@ h6 {
   right: 20px;
 }
 .lineup2021__item-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
 }
 .lineup2021__item-price {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 21px;
-  line-height: 140%;
+  line-height: 150%;
   color: #3D3D3D;
+}
+.lineup2021__slider {
+  position: relative;
+  max-width: 420px;
+}
+.lineup2021__slider-item {
+  max-width: 420px;
+  margin: 0px 4px 0px 0px;
 }
 
 @media (max-width: 1315px) {
@@ -1058,39 +1097,39 @@ h6 {
 
 .done {
   display: flex;
-  margin: 70px 0px 0px 0px;
+  padding: 60px 0px 0px 0px;
 }
 .done__info {
-  padding: 30px 90px 30px 0;
+  padding: 0px 50px 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .done__title {
-  line-height: 120%;
+  line-height: 125%;
   margin: 0px 0px 0px 0px;
 }
 .done__subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 140%;
-  display: flex;
-  align-items: center;
-  color: #3D3D3D;
-}
-.done__text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 21px;
   line-height: 150%;
   display: flex;
   align-items: center;
   color: #3D3D3D;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 80px 0px 0px;
+}
+.done__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.5%;
+  display: flex;
+  align-items: center;
+  color: #3D3D3D;
+  padding: 0px 60px 0px 0px;
 }
 .done__title-adaptive {
   display: none;
@@ -1231,16 +1270,26 @@ h6 {
 }
 
 .technologies {
-  margin: 0px 0px 32px 0px;
+  padding: 60px 0px 32px 0px;
 }
 .technologies__info {
-  display: flex;
-  padding: 50px 0px 0px 0px;
-  align-items: flex-end;
-  margin: 0px 0px 48px 0px;
+  margin: 0px 0px 38px 0px;
 }
 .technologies__main {
   display: flex;
+}
+.technologies__title {
+  line-height: 125%;
+  max-width: 400px;
+}
+.technologies__subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+  color: #3D3D3D;
+  margin: 20px 0px 0px 0px;
 }
 
 .technologies-brick {
@@ -1255,16 +1304,16 @@ h6 {
   height: 50px;
   background: #3459951f;
   border-radius: 6px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #345995;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding: 0px 0px 0px 35px;
   margin: 0px 0px 20px 0px;
 }
 .technologies-brick__info img {
@@ -1272,36 +1321,88 @@ h6 {
 }
 .technologies-brick__body {
   display: flex;
-  padding: 30px 0px 0px 0px;
+  justify-content: space-between;
+  padding: 44px 40px 50px 0px;
   height: 292px;
 }
 .technologies-brick__body-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
+  max-width: 240px;
 }
 .technologies-brick__body-p {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #696969;
-  margin: 20px 0px 20px 0px;
+  margin: 18px 0px 0px 0px;
+  max-width: 370px;
 }
 .technologies-brick__body-text {
   display: flex;
   flex-direction: column;
-  max-width: 305px;
+}
+.technologies-brick__body-title-adaptive {
+  display: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 140%;
+  color: #3D3D3D;
+  margin: 0px 20px 20px 20px;
 }
 
 @media (max-width: 1280px) {
   .technologies {
     margin: 87px 0px 32px 0px;
+  }
+  .technologies__info {
+    display: block;
+  }
+
+  .technologies-brick__body-text {
+    padding: 0px 15px 0px 0px;
+  }
+  .technologies-brick__info {
+    width: 350px;
+  }
+}
+@media (max-width: 1027px) {
+  .technologies__main {
+    display: block;
+  }
+
+  .technologies-brick {
+    margin: 0px 0px 0px 0px;
+  }
+  .technologies-brick__info {
+    margin: 42px 0px 20px 0px;
+  }
+}
+@media (max-width: 619px) {
+  .technologies-brick {
+    min-width: 350px;
+  }
+  .technologies-brick__body {
+    display: block;
+    height: 100%;
+    padding: 30px 0px 30px 0px;
+  }
+  .technologies-brick__body p {
+    margin: 25px 0px 0px 20px;
+  }
+  .technologies-brick__body-title {
+    display: none;
+  }
+  .technologies-brick__body-title-adaptive {
+    display: block;
   }
 }
 * {
@@ -1396,26 +1497,26 @@ h6 {
 }
 
 .video {
-  padding: 36px 35px 50px 35px;
+  padding: 50px 35px 60px 35px;
   text-align: center;
 }
 .video__body {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .video__item {
   flex: 0 1 30%;
   max-width: 408px;
 }
 .video__title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
-  margin: 0px 0px 38px 0px;
+  margin: 0px 0px 28px 0px;
   width: 350px;
   text-align: left;
 }
@@ -1424,6 +1525,26 @@ h6 {
   height: 230px;
 }
 
+@media (max-width: 1345px) {
+  .video {
+    padding: 0px 15px 30px 15px;
+  }
+  .video__item {
+    margin: 34px auto 0px;
+  }
+  .video__title {
+    width: 100%;
+  }
+}
+@media (max-width: 477px) {
+  .video {
+    text-align: left;
+  }
+  .video iframe {
+    width: 310px;
+    height: 172px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -1516,7 +1637,7 @@ h6 {
 }
 
 .mikea1 {
-  padding: 40px 0px 49px 35px;
+  padding: 40px 0px 60px 35px;
   margin: 70px 0px 0px 0px;
 }
 .mikea1__head {
@@ -1529,29 +1650,28 @@ h6 {
   margin: 0px 110px 0px 0px;
 }
 .mikea1__head-info {
-  margin: 0 auto;
+  margin: 0px 0px 0px 80px;
 }
 .mikea1__head-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
-  line-height: 120%;
+  line-height: 125%;
   color: #3D3D3D;
-  margin: 0px 0px 22px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .mikea1__head-subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #696969;
   margin: 0px 0px 24px 0px;
 }
 .mikea1__items {
-  margin: 14px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1564,18 +1684,18 @@ h6 {
   margin: 22px 0px 0px 0px;
 }
 .mikea1__item-text {
-  margin: 18px 0px 0px 0px;
-  font-family: Roboto;
+  margin: 20px 0px 0px 0px;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #3D3D3D;
   width: 265px;
 }
 .mikea1__button {
   text-align: center;
-  margin: 25px 0px 0px 0px;
+  margin: 45px 0px 0px 0px;
 }
 
 * {
@@ -1670,20 +1790,23 @@ h6 {
 }
 
 .diversity {
-  margin: 70px 0px 0px 0px;
-  padding: 42px 0px 40px 0px;
+  margin: 60px 0px 0px 0px;
+  padding: 60px 36px 40px 36px;
+}
+.diversity__title {
+  line-height: 125%;
 }
 .diversity__info {
   text-align: center;
 }
 .diversity__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 21px;
   line-height: 150%;
   color: #3D3D3D;
-  max-width: 758px;
+  max-width: 778px;
   margin: 15px auto 0px;
 }
 .diversity__img {
@@ -1783,40 +1906,44 @@ h6 {
 }
 
 .timing {
-  margin: 70px 0px 60px 0px;
+  margin: 40px 0px 50px 0px;
   display: flex;
+}
+.timing__title {
+  line-height: 125%;
 }
 .timing__item {
   flex: 0 1 50%;
-  padding: 30px 0px 30px 35px;
+  padding: 30px 0px 30px 38px;
   margin: 0px 41px 0px 0px;
 }
 .timing__item:last-child {
   margin: 0px 0px 0px 0px;
 }
 .timing__text {
-  margin: 51px 0px 0px 0px;
-  font-family: Roboto;
+  margin: 25px 0px 0px 0px;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-size: 21px;
+  line-height: 150%;
+  font-weight: 600;
   display: flex;
   align-items: center;
   color: #696969;
+  padding: 0px 65px 0px 0px;
 }
 .timing__buttons {
-  margin: 175px 0px 0px 0px;
+  margin: 162px 0px 0px 0px;
 }
 .timing__cards {
   display: flex;
-  margin: 51px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   align-items: flex-end;
 }
 .timing__card {
   width: 258px;
   background: #3459951f;
-  padding: 30px 45px 17px 20px;
+  padding: 30px 40px 17px 20px;
   margin: 0px 10px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -1852,11 +1979,11 @@ h6 {
 .timing__proz {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-weight: 300;
-  font-size: 70px;
+  font-size: 76px;
+  line-height: 120%;
   color: #345995;
-  margin: 0px 25px 0px 0px;
+  margin: 0px 10px 0px 0px;
 }
 .timing__proz_green {
   font-size: 50px;
@@ -1867,11 +1994,11 @@ h6 {
   color: #DE0111;
 }
 .timing__card-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #345995;
 }
 .timing__card-text_green {
@@ -1984,25 +2111,27 @@ h6 {
 }
 
 .details {
-  margin: 70px 0px 70px 0px;
+  margin: 60px 0px 60px 0px;
   padding: 56px 0px 73px 0px;
 }
 .details__body {
-  max-width: 770px;
+  max-width: 870px;
   margin: 0 auto;
   text-align: center;
 }
 .details__subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 27px 0px 50px 0px;
 }
 .details__title {
   margin: 0;
+  line-height: 125%;
+  font-weight: 700;
 }
 .details img {
   margin: 0px 0px 75px 0px;
@@ -2100,8 +2229,8 @@ h6 {
 }
 
 .decision {
-  margin: 60px 0px 57px 0px;
-  padding: 41px 0px 78px 0px;
+  margin: 60px 0px 60px 0px;
+  padding: 41px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2112,34 +2241,33 @@ h6 {
 .decision__title {
   max-width: 570px;
   text-align: center;
-  padding: 0px 0px 20px 0px;
-  line-height: 120%;
+  padding: 0px 0px 10px 0px;
+  line-height: 125%;
   margin: 0;
 }
 .decision__text {
   margin: 0px auto;
   max-width: 534px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   text-align: center;
   color: #3D3D3D;
 }
 .decision__items {
   display: flex;
   justify-content: center;
-  margin: 45px 0px 0px 0px;
+  margin: 35px 0px 0px 0px;
 }
 .decision__item {
   flex: 0 1 25%;
-  max-width: 110px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 0px 22px 0px 0px;
+  margin: 0px 32px 0px 0px;
 }
 .decision__item :last-child {
   margin: 0px 0px 0px 0px;
@@ -2150,11 +2278,11 @@ h6 {
 }
 .decision__item p {
   padding: 20px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
   text-align: center;
   color: #3D3D3D;
 }
@@ -2254,13 +2382,18 @@ h6 {
 }
 
 .layout__img-p {
+  margin: 200px 0px 0px 0px;
   text-align: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  line-height: 160.5%;
+  font-weight: 400;
   color: #696969;
   margin: 20px 0px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 30%;
 }
 .layout__img {
   position: relative;
@@ -2296,32 +2429,31 @@ h6 {
   margin: 0px 0px 26px 0px;
 }
 .layout__text-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #3D3D3D;
-  margin: 0px 0px 16px 0px;
+  margin: 0px 0px 25px 0px;
 }
 .layout__text-paragraph {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 160.5%;
   color: #696969;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 30px 0px;
 }
 .layout__button {
   width: 300px;
   height: 68px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 155%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #696969;
   padding: 0px 33px 0px 33px;
   cursor: pointer;
@@ -2342,9 +2474,8 @@ h6 {
 
 .ui-selected {
   background: rgba(52, 89, 149, 0.1);
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-weight: bold;
   font-size: 22px;
   color: #345995;
@@ -2355,16 +2486,25 @@ h6 {
 
 .layout__examples {
   display: flex;
-  padding: 100px 38px 0px 38px;
+  padding: 130px 38px 0px 38px;
   justify-content: space-between;
+  margin: 100px 0px 0px 0px;
+  position: relative;
+}
+
+.layout__example {
+  margin: 0px 40px 0px 0px;
+}
+.layout__example:last-child {
+  margin: 0px 0px 0px 0px;
 }
 
 .layout__example-body {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.5%;
   color: #2B2B2B;
   padding: 0px 0px 50px 90px;
 }
@@ -2375,6 +2515,7 @@ h6 {
 
 .layout__example-body2 {
   background: url("../images/layout/07.png") no-repeat;
+  padding: 0px 130px 50px 90px;
 }
 
 * {
@@ -2477,11 +2618,11 @@ h6 {
 }
 .trifle__subtitle {
   margin: 20px 0px 42px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #696969;
 }
 .trifle__items {
@@ -2494,28 +2635,27 @@ h6 {
   max-width: 390px;
   text-align: left;
   margin: 33px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   line-height: 140%;
   align-items: center;
 }
 .trifle__item-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 24px 0px 15px 0px;
 }
 .trifle__item-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: 400;
   color: #696969;
-  line-height: 150%;
+  line-height: 160.5%;
 }
 
 * {
@@ -2610,26 +2750,28 @@ h6 {
 }
 
 .rent {
-  margin: 70px 0px 70px 0px;
+  margin: 60px 0px 60px 0px;
   padding: 55px 49px 60px 40px;
   display: flex;
 }
 .rent__title {
-  line-height: 120%;
+  line-height: 125%;
+  margin: 0;
 }
 .rent__subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #3D3D3D;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .rent__subtitle_weight_normal {
-  font-weight: normal;
-  margin: 20px 0px 45px 0px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+  margin: 20px 0px 95px 0px;
 }
 .rent__video {
   margin: 0px 0px 0px 48px;
@@ -2729,31 +2871,33 @@ h6 {
 .smart {
   padding: 40px 40px 82px 40px;
 }
+.smart__title {
+  margin: 0px 0px 0px 0px;
+}
 .smart__subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #3D3D3D;
-  margin: 48px 0px 20px 0px;
+  margin: 48px 0px 30px 0px;
 }
 .smart__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
-  margin: 20px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 .smart__body {
   display: flex;
   justify-content: space-between;
 }
 .smart__info {
-  max-width: 500px;
+  max-width: 550px;
 }
 .smart__items {
   display: flex;
@@ -2763,29 +2907,29 @@ h6 {
 }
 .smart__item {
   flex: 0 1 33%;
-  max-width: 340px;
+  max-width: 370px;
   margin: 53px 0px 0px 0px;
 }
 .smart__item-img {
   margin: 0px 0px 28px 0px;
 }
 .smart__item-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
 }
 .smart__item-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  font-weight: 400;
+  line-height: 160.5%;
   color: #3D3D3D;
-  margin: 22px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 .smart__item-title_big_margin {
   padding: 10px 0px 0px 0px;
@@ -2799,9 +2943,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-weight: bold;
   font-size: 16px;
 }
@@ -2898,7 +3041,7 @@ h6 {
 }
 
 .alisa {
-  margin: 70px 0px 70px 0px;
+  margin: 60px 0px 60px 0px;
   background: #E6E7EB;
   border-radius: 6px;
   padding: 58px 53px 58px 43px;
@@ -2906,7 +3049,8 @@ h6 {
   justify-content: space-between;
 }
 .alisa__title {
-  line-height: 120%;
+  line-height: 125%;
+  margin: 0px 0px 0px 0px;
 }
 .alisa__logotips {
   display: flex;
@@ -2924,19 +3068,18 @@ h6 {
   position: absolute;
   top: 10px;
   left: 20px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16.854px;
   line-height: 140%;
   color: #FFFFFF;
 }
 .alisa__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 18px 0px 0px 0px;
 }
@@ -3037,34 +3180,35 @@ h6 {
 
 .enjoy {
   text-align: center;
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 60px 0px;
 }
 .enjoy__title {
   margin: 0 auto 40px;
   text-align: center;
-  line-height: 120%;
+  line-height: 125%;
 }
 .enjoy__body {
   padding: 40px;
   display: flex;
-  justify-content: space-between;
 }
 .enjoy__info {
-  max-width: 579px;
+  max-width: 479px;
   text-align: left;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 84px;
   position: relative;
 }
 .enjoy__info-title {
-  line-height: 120%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
 }
 .enjoy__text {
   margin: 20px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.5%;
   color: #3D3D3D;
 }
 .enjoy__info-img {
@@ -3180,34 +3324,32 @@ h6 {
   justify-content: center;
 }
 .control__subtitle {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 20px 0px 0px 0px;
-  max-width: 450px;
+  max-width: 520px;
 }
 .control__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #3D3D3D;
   margin: 20px 0px 0px 0px;
   max-width: 413px;
 }
 .control__title {
   margin: 20px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-weight: bold;
   font-size: 50px;
-  line-height: 120%;
+  line-height: 125%;
   color: #3D3D3D;
 }
 .control__item-plus {
@@ -3228,11 +3370,11 @@ h6 {
 }
 .control__item-plus-text {
   flex: 0 1 90%;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 30px 0px 0px 0px;
 }
@@ -3247,23 +3389,22 @@ h6 {
   display: inline;
 }
 .control__body-item-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 21px 0px 0px 0px;
 }
 .control__body-item-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #3D3D3D;
-  margin: 10px 0px 0px 0px;
+  margin: 18px 0px 0px 0px;
 }
 
 * {
@@ -3368,7 +3509,7 @@ h6 {
   left: 61px;
   z-index: 2;
   max-width: 469px;
-  line-height: 120%;
+  line-height: 125%;
 }
 .appeal__opaciti {
   position: absolute;
@@ -3475,6 +3616,11 @@ h6 {
   padding: 42px 40px 55px 40px;
   margin: 0px 0px 70px 0px;
 }
+.level__title {
+  line-height: 125%;
+  margin: 40px 0px 0px 0px;
+  max-width: 570px;
+}
 .level__body {
   display: flex;
 }
@@ -3482,20 +3628,21 @@ h6 {
   margin: 0px 40px 0px 0px;
 }
 .level__body-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
-  font-weight: 500;
+  font-size: 16px;
+  line-height: 160.5%;
+  font-weight: 400;
   color: #3D3D3D;
   margin: 35px 0px 0px 0px;
   padding: 0px 67px 0px 0px;
+  max-width: 550px;
 }
 .level__items {
   margin: 26px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .level__item {
   position: relative;
@@ -3506,13 +3653,14 @@ h6 {
 .level__item:nth-child(3n) {
   margin: 30px 0px 0px 0px;
 }
-.level__item-info {
-  font-family: Roboto;
+.level__item-title {
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+}
+.level__item-info {
   color: #FFFFFF;
   position: absolute;
   bottom: 30px;
@@ -3520,9 +3668,11 @@ h6 {
   max-width: 309px;
 }
 .level__item-text {
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   margin: 10px 0px 0px 0px;
 }
 .level__item-opaciti {
@@ -3531,6 +3681,11 @@ h6 {
   height: 100%;
   top: 0;
   left: 0;
+}
+.level__item-popup {
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
 
 * {
@@ -3625,7 +3780,7 @@ h6 {
 }
 
 .projects {
-  margin: 70px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   padding: 50px 30px 55px 30px;
 }
 .projects__items {
@@ -3641,17 +3796,16 @@ h6 {
   display: flex;
 }
 .projects__item-plashka {
-  height: 30px;
+  height: 34px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 160%;
   margin: 0px 0px 10px 0px;
 }
 .projects__item-plashka_title {
@@ -3687,11 +3841,11 @@ h6 {
   margin: 0px 0px 0px 11px;
   display: flex;
   align-items: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #3D3D3D;
 }
 .projects__item-details {
@@ -3725,11 +3879,11 @@ h6 {
 .projects__item-phraza {
   margin: 10px 0px 0px 0px;
   text-align: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160.5%;
   color: #696969;
 }
 .projects__btn {
@@ -3833,27 +3987,30 @@ h6 {
 .orderframe {
   padding: 40px 0px 40px 0px;
   position: relative;
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 60px 0px;
 }
 .orderframe__info {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0px 0px 0px 44px;
+}
+.orderframe__title {
+  line-height: 125%;
 }
 .orderframe__subtitle {
   margin: 20px 0px 30px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #8C8C8C;
 }
 .orderframe__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 0px 0px 44px 0px;
 }
@@ -3973,12 +4130,11 @@ h6 {
   padding: 34px 0px 0px 47px;
 }
 .mainform__title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 120%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #3D3D3D;
   margin: 0px 0px 5px 0px;
 }
@@ -3999,40 +4155,40 @@ h6 {
 }
 
 ::-webkit-input-placeholder {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: rgba(43, 43, 43, 0.7);
 }
 
 ::-moz-placeholder {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: rgba(43, 43, 43, 0.7);
 }
 
 /* Firefox 19+ */
 :-moz-placeholder {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: rgba(43, 43, 43, 0.7);
 }
 
 /* Firefox 18- */
 :-ms-input-placeholder {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: rgba(43, 43, 43, 0.7);
 }
 
@@ -4129,7 +4285,7 @@ h6 {
 
 .mortgage {
   padding: 40px 40px 72px 43px;
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 60px 0px;
 }
 .mortgage__info {
   display: flex;
@@ -4138,30 +4294,27 @@ h6 {
 .mortgage__info img {
   margin: 0px 20px 0px 0px;
 }
-.mortgage__body {
-  max-width: 450px;
-}
 .mortgage__title {
-  transform: translate(0px, 0px);
-  opacity: 1;
+  line-height: 125%;
 }
 .mortgage__text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
   margin: 0px 0px 30px 0px;
+  max-width: 450px;
 }
 .mortgage__text-title {
   margin: 30px 0px 0px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+  line-height: 135%;
   color: #3D3D3D;
 }
 .mortgage__items {
@@ -4212,15 +4365,17 @@ h6 {
   border-bottom: 0px;
 }
 .mortgage__string-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #3D3D3D;
 }
 .mortgage__string-text_bold {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
 }
 .mortgage__string-border {
   display: flex;
@@ -4230,9 +4385,8 @@ h6 {
   margin: 0px 0px 52px 0px;
 }
 .mortgage__conditions {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   color: #345995;
@@ -4248,11 +4402,10 @@ h6 {
   width: 398px;
 }
 .mortgage__form-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 160.5%;
   color: #2B2B2B;
   margin: 0px 0px 13px 10px;
 }
@@ -4280,12 +4433,11 @@ h6 {
   background: #3459951f;
   border-radius: 5px;
   padding: 0px 0px 0px 11px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160%;
   color: #3D3D3D;
   cursor: pointer;
 }
@@ -4307,9 +4459,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   color: #3D3D3D;
@@ -4342,20 +4493,18 @@ h6 {
 }
 .mortgage__calculator-item-title {
   margin: 0px 0px 10px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 150%;
   color: #2B2B2B;
 }
 .mortgage__calculator-item-price {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #2B2B2B;
 }
 .mortgage__calculator-item-payment {
@@ -4461,7 +4610,7 @@ h6 {
 }
 
 .reviews {
-  margin: 70px auto 0px;
+  margin: 60px auto 0px;
   max-width: 1110px;
   position: relative;
 }
@@ -4484,11 +4633,11 @@ h6 {
 .button {
   background: #DE0111;
   border-radius: 5px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 140%;
+  line-height: 160%;
   text-align: center;
   color: #FFFFFF;
 }
@@ -4500,23 +4649,23 @@ h6 {
   height: 33px;
 }
 .button__banner1 {
-  width: 283px;
-  height: 44px;
+  width: 315px;
+  height: 48px;
   position: relative;
   z-index: 2;
 }
 .button__slider {
-  width: 150px;
+  width: 180px;
   height: 42px;
 }
 .button__technologies {
-  width: 168px;
-  height: 42px;
-  margin: 0px 0px 40px 0px;
+  width: 210px;
+  height: 48px;
+  margin: 20px 0px 0px 0px;
 }
 .button__video {
-  width: 364px;
-  height: 42px;
+  width: 420px;
+  height: 48px;
   background: #345995;
   margin: 30px 0px 0px 0px;
 }
@@ -4524,32 +4673,32 @@ h6 {
   background: #1D427D;
 }
 .button__mikea {
-  width: 160px;
-  height: 42px;
+  width: 210px;
+  height: 46px;
 }
 .button__mikea1 {
-  width: 190px;
-  height: 42px;
+  width: 210px;
+  height: 48px;
   background: #345995;
 }
 .button__mikea1:hover {
   background: #1D427D;
 }
 .button__timing1 {
-  width: 242px;
-  height: 42px;
+  width: 278px;
+  height: 48px;
   margin: 0px 20px 0px 0px;
 }
 .button__timing2 {
-  width: 170px;
-  height: 42px;
+  width: 200px;
+  height: 48px;
   background: #345995;
 }
 .button__timing2:hover {
   background: #1D427D;
 }
 .button__details {
-  height: 45px;
+  height: 48px;
   width: 261px;
   padding: 12px 0px 0px 0px;
 }
@@ -4557,7 +4706,7 @@ h6 {
   margin: 0px 0px 0px 7px;
 }
 .button__orderframe {
-  height: 45px;
+  height: 48px;
   width: 230px;
 }
 .button__mainform {
@@ -4567,7 +4716,7 @@ h6 {
 }
 .button__projects {
   width: 190px;
-  height: 42px;
+  height: 48px;
   background: #345995;
 }
 .button__projects:hover {
@@ -4577,17 +4726,18 @@ h6 {
 .button__mortgage {
   width: 398px;
   height: 50px;
+  background: #CD2B24;
 }
 
 .button__rent-red {
-  height: 50px;
-  width: 230px;
+  height: 48px;
+  width: 266px;
   margin: 0px 20px 0px 0px;
 }
 
 .button__rent-blue {
-  height: 50px;
-  width: 160px;
+  height: 48px;
+  width: 184px;
   background: #345995;
 }
 .button__rent-blue:hover {
@@ -4614,37 +4764,54 @@ h6 {
     margin: 28px auto 28px;
   }
 }
+@media (max-width: 619px) {
+  .button__technologies {
+    width: 310px;
+    height: 46px;
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+  }
+}
+@media (max-width: 477px) {
+  .button__video {
+    width: 310px;
+    height: 70px;
+    display: inline-block;
+    margin: 40px 0px 0px 0px;
+  }
+}
 .slider {
   max-width: 1110px;
+  height: 428px;
 }
 .slider__item {
   display: flex;
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 65px 108px 70px 114px;
+  justify-content: space-between;
+  padding: 55px 86px 50px 96px;
   position: relative;
 }
 .slider__item-quotes {
   position: absolute;
-  top: 32px;
+  top: 20px;
   left: 60px;
 }
 .slider__item-title {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 120%;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
   color: #3D3D3D;
+  max-width: 400px;
 }
 .slider__item-person {
   font-family: Roboto;
   font-style: normal;
 }
 .slider__item-name-descr {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160.5%;
   color: #696969;
 }
 .slider__item-name {
@@ -4653,21 +4820,27 @@ h6 {
   line-height: 140%;
   color: #3D3D3D;
 }
+.slider__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .slider__item-text {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 140%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
   display: flex;
   align-items: center;
   color: #696969;
-  margin: 19px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
+  max-width: 450px;
 }
 .slider__item-main {
   display: flex;
   justify-content: space-between;
-  margin: 35px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .slider__item-person-adaptive {
   display: none;
@@ -4783,7 +4956,6 @@ h6 {
 
 .slider__layout {
   max-width: 760px;
-  max-height: 590px;
   margin: -20px 0px 0px 0px;
 }
 .slider__layout__item-layout {
@@ -4898,9 +5070,9 @@ h6 {
 }
 .footer__item a {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
+  line-height: 160.5%;
   font-weight: 400;
   font-size: 16px;
   line-height: 80%;
@@ -4911,7 +5083,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 .footer__link_bold {
-  font-weight: 500;
   color: #FFFFFF;
 }
 .footer__social-icon {
@@ -4922,9 +5093,8 @@ h6 {
 }
 .footer__adress {
   margin: 0px 0px 31px 0px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
@@ -4943,9 +5113,8 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 80%;
   color: rgba(255, 255, 255, 0.7);

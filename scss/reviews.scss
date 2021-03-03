@@ -1,0 +1,23 @@
+@import "null.scss";
+
+.reviews{
+	margin: 60px auto 0px;
+	max-width: 1110px;
+	//max-height: 450px;
+	position: relative;
+}
+@media (max-width: 1280px){
+	.reviews{
+	max-width: 900px;
+	}
+}
+@media (max-width: 650px){
+	.reviews{
+		margin: 60px auto 0px;
+	}
+}
+@media (max-width: 1050px){
+	.reviews{
+		max-width: 650px;
+	}
+}

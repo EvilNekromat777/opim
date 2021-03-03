@@ -1,0 +1,28 @@
+@import "null.scss";
+@import "mixins.scss";
+
+.details{
+	margin: 60px 0px 60px 0px;
+	padding: 56px 0px 73px 0px;
+	&__body{
+		max-width: 870px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__subtitle{
+		@include font-style;
+		font-weight: 600;
+		font-size: 21px;
+		line-height: 150%;
+		color: #3D3D3D;
+		margin: 27px 0px 50px 0px;
+	}
+	&__title{
+		margin: 0;
+		line-height: 125%;
+		font-weight: 700;
+	}
+	img{
+		margin: 0px 0px 75px 0px;
+	}
+}

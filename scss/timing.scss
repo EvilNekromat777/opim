@@ -1,0 +1,115 @@
+@import "null.scss";
+@import "mixins.scss";
+
+.timing{
+	margin: 40px 0px 50px 0px;
+	@include flexbox();
+	&__title{
+		line-height: 125%;
+	}
+	&__item{
+		flex:0 1 50%;
+		padding: 30px 0px 30px 38px;
+		margin: 0px 41px 0px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	&__text{
+		margin: 25px 0px 0px 0px;
+		@include font-style;
+		font-size: 21px;
+		line-height: 150%;
+		font-weight: 600;
+		@include flexbox();
+		align-items: center;
+		color: #696969;
+		padding: 0px 65px 0px 0px;
+	}
+	&__buttons{
+		//margin: 113px 0px 52px 0px;
+		margin: 162px 0px 0px 0px;
+	}
+	&__cards{
+		@include flexbox();
+		margin: 30px 0px 0px 0px;
+		align-items: flex-end;
+	}
+	&__card{
+		width: 258px;
+		background: #3459951f;
+		padding: 30px 40px 17px 20px;
+		margin: 0px 10px 0px 0px;
+		@include flexbox();
+		flex-direction: column;
+		justify-content: space-between;
+		img{
+			width: 192px;
+			height: 192px;
+			margin: 30px 0px 0px 0px;
+		}
+		&_green{
+			width: 153px;
+			height: 247px;
+			background: #34954f18;
+			padding: 17px 0px 17px 20px;
+			img{
+				width: 72px;
+				height: 72px;
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		&_red{
+			width: 153px;
+			height: 201px;
+			background: #de011018;
+			padding: 17px 45px 17px 20px;
+			img{
+				width: 32px;
+				height: 32px;
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+	&__proz{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 76px;
+		line-height: 120%;
+		color: #345995;
+		margin: 0px 10px 0px 0px;
+		&_green{
+			font-size: 50px;
+			color: #34954F;
+		}
+		&_red{
+			font-size: 50px;
+			color: #DE0111;
+		}
+	}
+	&__card-text{
+		@include font-style;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 160.5%;
+		color: #345995;
+		&_green{
+			color: #34954F;
+			margin: 12px 0px 0px 0px;
+		}
+		&_red{
+			color: #DE0111;
+			margin: 12px 0px 0px 0px;
+		}
+	}
+	&__info{
+		@include flexbox();
+		&_green{
+			display: block;
+		}
+		&_red{
+			display: block;
+		}
+	}
+}

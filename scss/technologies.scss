@@ -1,0 +1,142 @@
+@import "null.scss";
+@import "mixins.scss";
+
+
+.technologies{
+	//margin: 60px 0px 32px 0px;
+	padding: 60px 0px 32px 0px;
+	&__info{
+		margin: 0px 0px 38px 0px;
+	}
+	&__main{
+		@include flexbox();
+	}
+	&__title{
+		line-height: 125%;
+		max-width: 400px;
+	}
+	&__subtitle{
+	@include font-style;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 150%;
+	color: #3D3D3D;
+	margin: 20px 0px 0px 0px;
+	}
+}
+
+.technologies-brick{
+	flex: 0 1 50%;
+	margin: 0px 40px 0px 0px;
+	&:last-child{
+		margin: 0px 0px 0px 0px;
+	}
+	&__info{
+	width: 324px;
+	height: 50px;
+	background:#3459951f;
+	border-radius: 6px;
+	@include font-style;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 150%;
+	color: #345995;
+	@include flexbox();
+	align-items: center;
+	justify-content: left;
+	padding: 0px 0px 0px 35px;
+	margin: 0px 0px 20px 0px;
+	img{
+		margin: 0px 15px 0px 0px;
+	}
+	}
+	&__body{
+		@include flexbox();
+		justify-content: space-between;
+		padding: 44px 40px 50px 0px;
+		height: 292px;
+	}
+	&__body-title{
+		@include font-style;
+		font-weight: 600;
+		font-size: 21px;
+		line-height: 150%;
+		color: #3D3D3D;
+		max-width: 240px;
+	}
+	&__body-p{
+		@include font-style;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160.5%;
+		color: #696969;
+		margin: 18px 0px 0px 0px;
+		max-width: 370px;
+	}
+	&__body-text{
+		@include flexbox();
+		flex-direction: column;
+		//max-width: 305px;
+	}
+	&__body-title-adaptive{
+		display: none;
+		@include font-style;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 140%;
+		color: #3D3D3D;
+		margin: 0px 20px 20px 20px;
+	}
+}
+//==============================================>
+@media (max-width:  1280px){
+	.technologies{
+		margin: 87px 0px 32px 0px;
+		&__info{
+			display: block;
+		}
+	}
+	.technologies-brick{
+		
+		&__body-text{
+			padding: 0px 15px 0px 0px;
+		}
+		&__info{
+			width: 350px;
+		}
+		
+	}
+}
+@media (max-width: 1027px){
+	.technologies{
+	&__main{
+		display: block;
+	}
+}
+.technologies-brick{
+	margin: 0px 0px 0px 0px;
+	&__info{
+		margin: 42px 0px 20px 0px;
+	}
+}
+}
+@media (max-width: 619px){
+	.technologies-brick{
+		min-width: 350px;
+		
+		&__body{
+			display: block;
+			height: 100%;
+			padding: 30px 0px 30px 0px;
+			p{
+				margin: 25px 0px 0px 20px;
+			}
+		}
+		&__body-title{
+			display: none;
+		}
+		&__body-title-adaptive{
+			display: block;
+		}
+	}
+}

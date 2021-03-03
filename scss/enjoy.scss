@@ -1,0 +1,40 @@
+@import "null.scss";
+@import "mixins.scss";
+
+.enjoy{
+	text-align: center;
+	margin: 0px 0px 60px 0px;
+	&__title{
+		margin: 0 auto 40px;
+		text-align: center;
+		line-height: 125%;
+	}
+	&__body{
+		padding: 40px;
+		@include flexbox();
+	}
+	&__info{
+		max-width: 479px;
+		text-align: left;
+		margin: 30px 0px 0px 84px;
+		position: relative;
+	}
+	&__info-title{
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 135%;
+	}
+	&__text{
+		margin: 20px 0px 0px 0px;
+		@include font-style;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160.5%;
+		color: #3D3D3D;
+	}
+	&__info-img{
+		position: absolute;
+		top: -38px;
+		left: -29px;
+	}
+}

@@ -132,7 +132,57 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Dots */
 
-.slick-dots{
+.slider .slick-dots{
 	li{
 	display: none;
 }}
+
+//===============================================>
+
+.lineup2021__slider .slick-prev{
+	position: absolute;
+	z-index: 2;
+	left: 10px;
+	top: 60%;
+	 background: url('../images/lineup2021/arrow-prev.png') no-repeat;
+}
+.lineup2021__slider .slick-next{
+	position: absolute;
+	z-index: 2;
+	top: 60%;
+	right: -30px;
+	 background: url('../images/lineup2021/arrow-next.png') no-repeat;
+}
+
+.lineup2021__slider .slick-dots{
+	position: absolute;
+	bottom: 17px;
+	left: 40%;
+	z-index: 2;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lineup2021__slider .slick-dots li {
+	list-style: none;
+	margin: 0px 8px;
+}
+
+.lineup2021__slider .slick-dots li button {
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	background: #D0D0D0;
+	border-radius: 50%;
+}
+
+.lineup2021__slider .slick-dots li.slick-active button {
+	background-color: #fff;
+	outline: none;
+}
+//==================================================================>
+.slider__layout .slick-prev,
+.slider__layout .slick-next{
+	top: 77%;
+}
