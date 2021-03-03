@@ -39,13 +39,14 @@
 	&__adress{
 		margin: 0px 0px 31px 0px;
 		@include font-style;
+		font-weight: 400;
 		font-size: 16px;
-		line-height: 150%;
+		line-height: 160.5%;
 		color: #FFFFFF;
 		padding: 0px 10px 0px 0px;
 	}
 	&__adress_tel{
-		font-weight: bold;
+		font-weight: 500;
 	}
 	&__line{
 		margin: 30px 0px 42px 0px;
