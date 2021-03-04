@@ -28,16 +28,19 @@
 		font-style: normal;
 	}
 	&__item-name-descr{
+		@include font-style;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 160.5%;
 		color: #696969;
 	}
 	&__item-name{
-		font-weight: bold;
-		font-size: 22px;
-		line-height: 140%;
+		@include font-style;
+		font-weight: 600;
+		font-size: 21px;
+		line-height: 150%;
 		color: #3D3D3D;
+
 	}
 	&__item-info{
 		display: flex;
@@ -52,7 +55,7 @@
 		display: flex;
 		align-items: center;
 		color: #696969;
-		margin: 15px 0px 0px 0px;
+		margin: 20px 0px 0px 0px;
 		max-width: 450px;
 	}
 	&__item-main{

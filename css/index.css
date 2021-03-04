@@ -4837,15 +4837,19 @@ h6 {
   font-style: normal;
 }
 .slider__item-name-descr {
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 160.5%;
   color: #696969;
 }
 .slider__item-name {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 140%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
   color: #3D3D3D;
 }
 .slider__item-info {
@@ -4862,7 +4866,7 @@ h6 {
   display: flex;
   align-items: center;
   color: #696969;
-  margin: 15px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   max-width: 450px;
 }
 .slider__item-main {
